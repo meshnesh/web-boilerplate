@@ -8,47 +8,105 @@
 	<title>Foundation for Sites</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/foundation.min.css">
-	<link rel="stylesheet" href="css/app1.css"> </head>
+	<link rel="stylesheet" href="css/login.css"> </head>
 
 <body>
-	<nav class="nav ">
-		<div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
-			<div class="nav-mobile">
-				<ul class="nav">
-					<li> <a href="#">Home</a> </li>
-					<li><a href="#"><i class="fa fa-book"></i> About</a></li>
-					<li><a href="#"><i class="fa fa-fire"></i> Demo</a></li>
-					<li> <a href="#"><i class="fa fa-user"></i> Pricing</a> </li>
-					<li class="button-dropdown"> <a href="javascript:void(0)" class="dropdown-toggle">Contact <span>▼</span></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">
-									<label>
-										<input type="text" placeholder="Name"> </label>
-									<label>
-										<input type="text" placeholder="Email"> </label>
-									<label>
-										<input type="text" placeholder="Phone Number"> </label>
-									<label>
-										<textarea placeholder="Your message"></textarea>
-									</label>
-									<input type="submit" value="Send Message" class="hiring" /> </a>
-							</li>
-						</ul>
-					</li>
-					<li> <a href="#"><i class="fa fa-user"></i> Sign Up/ Login</a> </li>
-				</ul>
+	<html>
+
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="card-container">
+			<div class="toggle"><i class="fa fa-user fa-pencil fa-lg"></i>
+				<div class="tooltip">Sign up</div>
+			</div>
+			<div class="card login-register login-reset">
+				<h1 class="title">Login</h1>
+				<form>
+					<div class="input-container has-feedback">
+						<input type="text" id="Username" name="Username" required autocomplete="off" pattern="[\w_-]{3,20}" title="Must contain from 3 to 20 characters such as any letter, number, an underscore, or a hyphen." />
+						<label for="Username">Username</label> <i class="fa fa-user form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="input-container has-feedback">
+						<input type="password" id="Password" name="Password" required autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Must contain at least one number and one uppercase and lowercase letter, and from 8 to 20 characters." />
+						<label for="Password">Password</label> <i class="fa fa-lock form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="remember-me" checked> <span class="cr"><i class="cr-icon fa fa-rocket"></i></span> Remember me </label>
+					</div>
+					<div class="button-container">
+						<button class="rkmd-btn btn-lightBlue ripple-effect float-right"><span>Sign in</span></button>
+					</div>
+					<div class="footer"><a href="#">Forgot your password?</a></div>
+				</form>
+			</div>
+			<div class="card login-register">
+				<h1 class="title">Create an account</h1>
+				<form>
+					<div class="input-container has-feedback">
+						<input type="text" id="Username" name="Username" required autocomplete="off" pattern="[\w_-]{3,20}" title="Username must contain from 3 to 20 characters such as any letter, number, an underscore, or a hyphen." />
+						<label for="Username">Username</label> <i class="fa fa-user form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="input-container has-feedback">
+						<input type="email" id="E-mail" name="E-mail" required pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+" title="Not an e-mail!" autocomplete="off" />
+						<label for="E-mail">E-mail</label> <i class="fa fa-envelope form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="input-container has-feedback">
+						<input type="password" id="Password" name="Password" required autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Password must contain at least one number and one uppercase and lowercase letter, and from 8 to 20 characters." />
+						<label for="Password">Password</label> <i class="fa fa-lock form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="terms" required> <span class="cr"><i class="cr-icon fa fa-rocket"></i></span> I accept something I never read </label>
+					</div>
+					<div class="button-container">
+						<button><span>Register</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="card login-reset">
+				<h1 class="title">Reset password</h1>
+				<p class="reset-info">Password reset instruction will be send to your e-mail.</p>
+				<form>
+					<div class="input-container has-feedback">
+						<input type="email" id="E-mail" name="E-mail" required pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+" title="Not an e-mail!" autocomplete="off" />
+						<label for="E-mail">E-mail</label> <i class="fa fa-envelope form-control-feedback"></i>
+						<div class="check"></div>
+						<div class="bar"></div>
+					</div>
+					<div class="button-container">
+						<button><span>Reset</span></button>
+					</div>
+					<div class="footer"><a href="#">Back to Login</a></div>
+				</form>
 			</div>
 		</div>
-	</nav>
-	<div class="center">
-		<p>Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.Lorem ipsum dolor sit amet, ne quo etiam prompta. Doctus qualisque et has, in dolor iracundia ius. Ut zril graeci alterum mea, mel in saperet volumus, ut vel reque vitae tibique. Splendide adversarium vim no. Atomorum mediocrem ut est. Suas errem vocent vim in, reque idque gloriatur qui ei. Dolores conceptam eu has, ad eam habeo urbanitas, graeci inermis repudiandae ne vel. In everti inimicus percipitur quo. Te per ridens complectitur. Ius insolens definitionem no, ne ius novum volutpat. Et alii nulla adipisci ius, nec ridens omnesque comprehensam an. Sit omnium minimum adipisci in, te iuvaret alienum offendit vix, possim facilisis an eum. An qui delicata scripserit. Duo enim omnium in. No nibh meis causae nec, idque velit nostro vis eu, solum doctus regione in pri. Ei vis dicant ridens tacimates, sanctus verterem deserunt cum eu. Mundi melius te vel. Vix facete legimus facilis at, eos ut natum aeque nonumes, tale meliore detraxit sed te. Sea no utinam elaboraret scripserit, nam timeam invidunt in. Per tation doming reprimique ad, in sit paulo senserit suscipiantur, eu sit dolores gubergren. Vis probatus accusata principes et, alia eros consetetur mea ei, vel an odio debet. Ut ius appareat consetetur. Quas iusto dicam at mel, sea cu altera salutatus. Altera pertinax et has, nonumy erroribus dignissim no sed. Eos ut labores elaboraret, ea adhuc doming vix. Tale quodsi at duo. Eum case tation consetetur ne.</p>
-	</div>
+	</body>
+
+	</html>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/what-input.js"></script>
 	<script src="js/vendor/foundation.min.js"></script>
-	<script src="js/app1.js"></script>
+	<script src="js/login.js"></script>
 </body>
 
 </html>

@@ -16,8 +16,11 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1,
+h4 {
 	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
 }
 
 
@@ -596,9 +599,12 @@ BAR-CHART
 	color: #008736;
 }
 
+
+/*
 .junior {
 	padding-top: 5%;
 }
+*/
 
 .fa-square-o:before {
 	padding-right: 16%;
@@ -629,11 +635,12 @@ BAR-CHART
 
 .line_3 {
 	color: #5db530;
+	font-size: 1.2em;
 }
 
 .line_4 {
 	color: #fff;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 footer {
@@ -641,20 +648,24 @@ footer {
 	text-align: center;
 	background: #323c45;
 	height: 15%;
-	padding-top: 3%
+	padding-top: 3%;
+	font-size: 1.2em;
 }
 
 .logo-img {
-	width: 25%;
+	width: 15%;
 	float: left;
+	padding-top: 1.5%;
 }
 
 .science {
 	color: #55b449;
 }
 
+#create {
+	border-right: 1px solid #000;
+}
 
-/*
 #first,
 #first_a,
 #second,
@@ -662,6 +673,8 @@ footer {
 #third,
 #third_a,
 #fourth,
-#fifth {
+#fifth,
+#zero,
+#ona {
 	display: none;
-}*/
+}

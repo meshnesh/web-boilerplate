@@ -30,6 +30,7 @@ a {
 
 ul {
 	list-style: none;
+	/*	text-align: right;*/
 }
 
 
@@ -61,7 +62,7 @@ nav {
 }
 
 .nav .button-dropdown {
-	width: 135px;
+	width: 100px;
 	position: relative;
 }
 
@@ -69,7 +70,7 @@ nav {
 	display: block;
 	color: #008736;
 	background-color: #fff;
-	padding: 10px 20px;
+	padding: 10px 7px;
 	text-decoration: none;
 }
 
@@ -131,13 +132,8 @@ nav {
 }
 
 .signup {
-	/*
-	border: 2.5px solid #0ab59f;
-	background: transparent;
-	margin-top: 0%;
-*/
 	font-size: 1.2em;
-	font-weight: 400;
+	font-weight: 200;
 	text-transform: uppercase;
 	color: #0ab59f;
 	/*	float: right;*/
@@ -151,7 +147,6 @@ nav {
 }
 
 .signup:hover {
-	/*	background: #0ab59f;*/
 	color: #f2c71a;
 	font-weight: 500;
 }
@@ -173,6 +168,24 @@ nav {
 textarea {
 	color: green;
 }
+
+
+/*
+.row.expanded {
+	max-width: 80.5rem;
+
+*/
+
+.zoomIn {
+	height: 55vh;
+}
+
+
+/*
+#fifth {
+	margin-top: -2%;
+}
+*/
 
 
 /*********NAV BAR END**********/

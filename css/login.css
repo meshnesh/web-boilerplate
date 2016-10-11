@@ -159,7 +159,7 @@ body {
 	position: absolute;
 	top: 5;
 	right: -0;
-	background: #2E538E;
+	background: #5db530;
 	border-radius: 0 5px;
 	width: 40px;
 	height: 40px;
@@ -234,10 +234,10 @@ body {
 .card .title {
 	position: relative;
 	z-index: 1;
-	border-left: 5px solid #2E538E;
+	border-left: 5px solid #5db530;
 	margin: 0 0 25px;
 	padding: 10px 0 10px 40px;
-	color: #2E538E;
+	color: #5db530;
 	font-size: 31px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -303,7 +303,7 @@ input:valid ~ div.check:after {
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: #6F96D3;
+	color: #63a07e;
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 58px;
@@ -335,7 +335,7 @@ input:valid ~ div.check:after {
 .card .input-container .bar:after {
 	content: '';
 	position: absolute;
-	background: #2E538E;
+	background: #5db530;
 	width: 0;
 	height: 2px;
 	-webkit-transition: .2s ease;
@@ -366,7 +366,7 @@ input:valid ~ div.check:after {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	background: #2E538E;
+	background: #5db530;
 	width: 150px;
 	border: 1px solid #FFFFFF;
 	border-radius: 2px;
@@ -417,8 +417,8 @@ input:valid ~ div.check:after {
 .card .button-container button:hover,
 .card .button-container button:active,
 .card .button-container button:focus {
-	border-color: #2E538E;
-	box-shadow: 0 0 15px #2E538E;
+	border-color: #5db530;
+	box-shadow: 0 0 15px #5db530;
 }
 
 .card .button-container button:hover span,
@@ -430,7 +430,7 @@ input:valid ~ div.check:after {
 
 .card .button-container button:active span,
 .card .button-container button:focus span {
-	color: #2E538E;
+	color: #5db530;
 }
 
 .card .button-container button:active:before,
@@ -490,7 +490,7 @@ input:valid ~ div.check:after {
 	float: left;
 	margin-right: .5em;
 	margin-top: 5px;
-	color: #2E538E;
+	color: #5db530;
 	-webkit-transition: 5s ease;
 	-o-transition: 5s ease;
 	-moz-transition: 5s ease;
@@ -506,7 +506,7 @@ input:valid ~ div.check:after {
 
 .card .checkbox .cr:hover {
 	border-color: #7FA0D3;
-	box-shadow: 0 0 2px #2E538E;
+	box-shadow: 0 0 2px #5db530;
 }
 
 .card .checkbox .cr .cr-icon {

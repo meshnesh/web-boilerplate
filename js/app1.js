@@ -36,8 +36,6 @@ $(function () {
 	});
 });
 // JavaScript
-//window.sr = ScrollReveal();
-//sr.reveal('.foo');
 //scrollReveal
 var fooReveal = {
 	opacity: 0

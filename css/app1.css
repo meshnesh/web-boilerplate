@@ -1,3 +1,4 @@
+mailer
 /****************************GENERAL************************************/
 
 * {
@@ -8,10 +9,10 @@
 }
 
 body {
-	background: #f9f2f4;
-	font-family: 'Roboto', sans-serif;
+	background: #11542b;
 	font-size: 16px;
 	padding-top: 80px;
+	font-family: 'Lato', sans-serif;
 }
 
 .nav-center,
@@ -66,10 +67,14 @@ nav {
 
 .nav li a {
 	display: block;
-	color: #333;
+	color: #008736;
 	background-color: #fff;
 	padding: 10px 20px;
 	text-decoration: none;
+}
+
+.nav li a:hover {
+	color: #55b449;
 }
 
 .nav li {
@@ -105,19 +110,50 @@ nav {
 }
 
 .hiring {
-	border: 2.5px solid #e84a64;
+	border: 2.5px solid #0ab59f;
 	background: transparent;
 	margin-top: 0%;
 	font-size: 1.2em;
 	font-weight: 200;
 	text-transform: uppercase;
-	color: #e84a64;
+	color: #0ab59f;
 	float: right;
 	height: 2.5em;
 	margin-top: 10%;
 	border-radius: 7px;
 	width: 50%;
 	margin-bottom: 6%;
+}
+
+.hiring:hover {
+	background: #0ab59f;
+	color: white;
+}
+
+.signup {
+	/*
+	border: 2.5px solid #0ab59f;
+	background: transparent;
+	margin-top: 0%;
+*/
+	font-size: 1.2em;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #0ab59f;
+	/*	float: right;*/
+	/*	height: 2.5em;*/
+	/*
+	margin-top: 10%;
+	border-radius: 7px;
+	width: 10%;
+	margin-bottom: 6%;
+*/
+}
+
+.signup:hover {
+	/*	background: #0ab59f;*/
+	color: #f2c71a;
+	font-weight: 500;
 }
 
 [type=color],

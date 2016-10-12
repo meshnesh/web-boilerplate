@@ -8,6 +8,7 @@
 	<title>Foundation for Sites</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/app1.css">
 	<link rel="stylesheet" href="css/login.css"> </head>
 
 <body>
@@ -17,7 +18,7 @@
 		</div>
 		<div class="card login-register login-reset">
 			<h1 class="title">Login</h1>
-			<form>
+			<form method="post">
 				<div class="input-container has-feedback">
 					<input type="text" id="Username" name="Username" required autocomplete="off" pattern="[\w_-]{3,20}" title="Must contain from 3 to 20 characters such as any letter, number, an underscore, or a hyphen." />
 					<label for="Username">Username</label> <i class="fa fa-user form-control-feedback"></i>
@@ -42,7 +43,7 @@
 		</div>
 		<div class="card login-register">
 			<h1 class="title">Create an account</h1>
-			<form>
+			<form method="post">
 				<div class="input-container has-feedback">
 					<input type="text" id="Username" name="Username" required autocomplete="off" pattern="[\w_-]{3,20}" title="Username must contain from 3 to 20 characters such as any letter, number, an underscore, or a hyphen." />
 					<label for="Username">Username</label> <i class="fa fa-user form-control-feedback"></i>

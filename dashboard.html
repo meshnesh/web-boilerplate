@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Charts | Dashboard</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/animate.css/animate.min.css">
+	<link rel="stylesheet" href="css/dasboard.css"> </head>
+
+<body>
+	<aside>
+		<header>
+			<div><img src="http://source.unsplash.com/random/55x55" class="profile-picture" />
+				<p>John Doe</p>
+			</div>
+		</header>
+		<nav class="side-navigation">
+			<ul>
+				<li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+				<li><a href="#"><i class="fa fa-files-o"></i>Your Files</a></li>
+				<li><a href="#"><i class="fa fa-area-chart"></i>Visualise</a></li>
+				<li><a href="#"><i class="fa fa-user"></i>User profile</a></li>
+				<li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+				<li><a href="#"><i class="fa fa-exclamation-triangle"></i>Report a problem</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<header class="main-head">
+			<div class="row">
+				<div class="small-2 large-4 columns count">
+					<div class="icons">
+						<!--						<i class="fa fa-user-md"></i>--><i class="fa fa-comments-o"></i><i class="fa fa-bell-o"><span class="number-alert">3</span></i></div>
+					<!--					<div class="logo"><i class="fa fa-rocket"></i> </div>--></div>
+				<div class="small-4 large-4 columns count">
+					<p>Your account expires in</p>
+				</div>
+				<div class="small-6 large-4 columns count">
+					<div id="counter"></div>
+				</div>
+			</div>
+			<!--
+		<div class="search">
+	<input type="text" name="search" placeholder="Type here to search..." autocomplete="off" /><i class="fa fa-search"></i> </div>
+-->
+		</header>
+		<div class="container main">
+			<div class="user-card">
+				<figure><img src="http://source.unsplash.com/random/110x110" /></figure>
+				<div class="user-info">
+					<div class="name"> <span>John Doe</span> </div>
+					<div class="user-role"> DS </div>
+					<div class="experience-points"><i class="fa fa-coffee"></i>8,977 files</div>
+				</div>
+			</div>
+			<div class="action-links">
+				<ul>
+					<li><a href="#" data-title="Create new file"><i class="fa fa-plus"></i></a></li>
+					<li><a href="#" data-title="Sign out"><i class="fa fa-sign-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- main content-->
+		<ul class="category-navigation container">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Shared projects</a></li>
+			<li><a href="#">Embeded projects</a></li>
+			<li><a href="#">Report an issue</a></li>
+		</ul>
+		<div class="container content">
+			<div class="card orange">
+				<ul class="tabs">
+					<li data-tab="1" class="active"><span>32</span>Tabs</li>
+					<li data-tab="2"><span>4</span>Tabs</li>
+				</ul>
+				<div data-content="1" class="content visible">
+					<ul>
+						<li>Tab content 0</li>
+						<li>Tab content 1</li>
+						<li>Tab content 2</li>
+						<li>Tab content 3</li>
+						<li>Tab content 4</li>
+						<li>Tab content 5</li>
+						<ul class="hidden-content">
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+				<div data-content="2" class="content">
+					<ul>
+						<li>Tab content 5</li>
+						<li>Tab content 4</li>
+						<li>Tab content 3</li>
+						<li>Tab content 2</li>
+						<li>Tab content 1</li>
+						<li>Tab content 0</li>
+						<ul class="hidden-content">
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card purple">
+				<ul class="tabs">
+					<li data-tab="3" class="active"><span>21</span>Tabs</li>
+					<li data-tab="4"><span>4</span>Tabs</li>
+				</ul>
+				<div data-content="3" class="content visible">
+					<ul class="has-icon">
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>11</span></div>Tab content 0 </li>
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>1</span></div>Tab content 0 </li>
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>9</span></div>Tab content 0 </li>
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>5</span></div>Tab content 0 </li>
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>1</span></div>Tab content 0 </li>
+						<li>
+							<div class="icon"><i class="fa fa-comment-o"></i><span>9</span></div>Tab content 0 </li>
+						<ul class="hidden-content">
+							<li>
+								<div class="icon"><i class="fa fa-comment-o"></i><span>9</span></div>Tab content 0 </li>
+							<li>
+								<div class="icon"><i class="fa fa-comment-o"></i><span>1</span></div>Tab content 0 </li>
+							<li>
+								<div class="icon"><i class="fa fa-comment-o"></i><span>0</span></div>Tab content 0 </li>
+							<li>
+								<div class="icon"><i class="fa fa-comment-o"></i><span>0</span></div>Tab content 0 </li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+				<div data-content="4" class="content">
+					<ul>
+						<li>Tab content 5</li>
+						<li>Tab content 4</li>
+						<li>Tab content 3</li>
+						<li>Tab content 2</li>
+						<li>Tab content 1</li>
+						<li>Tab content 0</li>
+						<ul class="hidden-content">
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card green">
+				<ul class="tabs">
+					<li data-tab="5" class="active"><span>8</span>Tabs</li>
+					<li data-tab="6"><span>4</span>Tabs</li>
+				</ul>
+				<div data-content="5" class="content visible">
+					<ul class="has-icon">
+						<li>
+							<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<li>
+							<div data-text="83%" data-value="83" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<li>
+							<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<li>
+							<div data-text="65%" data-value="65" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<li>
+							<div data-text="25%" data-value="25" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<li>
+							<div data-text="40%" data-value="40" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						<ul class="hidden-content">
+							<li>
+								<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+							<li>
+								<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+							<li>
+								<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+							<li>
+								<div data-text="100%" data-value="100" class="graph"><span class="value"></span><span class="bar"></span></div>Tab Content 3 </li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+				<div data-content="6" class="content">
+					<ul>
+						<li>Tab content 5</li>
+						<li>Tab content 4</li>
+						<li>Tab content 3</li>
+						<li>Tab content 2</li>
+						<li>Tab content 1</li>
+						<li>Tab content 0</li>
+						<ul class="hidden-content">
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+							<li>More content</li>
+						</ul>
+						<li data-less="Show less" data-more="Show more" class="show-more"> <span>Show more</span><i class="fa fa-chevron-down"></i></li>
+					</ul>
+				</div>
+			</div>
+	</main>
+	<footer>
+		<p>Charts.co.ke</p>
+	</footer>
+	<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/dashboard.js"></script>
+</body>
+
+</html>

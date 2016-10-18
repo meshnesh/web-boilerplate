@@ -718,6 +718,7 @@ p {
 	text-shadow: 0 0 2px black;
 }
 
+
 /*
 #counter span.days {
 	margin-right: 2px;
@@ -769,4 +770,36 @@ p {
 
 .count {
 	padding-top: 3%;
+}
+
+h4 {
+	margin-top: 5%;
+}
+
+h3,
+h2 {
+	text-align: center;
+}
+
+hr {
+	border-bottom: 1.5px solid #cacaca;
+}
+
+.button.success {
+	background-color: #5da423;
+	color: #fefefe;
+	float: right;
+}
+
+textarea {
+	height: 15em;
+}
+
+#profile {
+	text-align: center;
+}
+
+#report,
+#profile {
+	display: none;
 }

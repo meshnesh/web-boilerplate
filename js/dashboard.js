@@ -143,3 +143,29 @@ function counter(date) {
 	timer = setInterval(count, 1000);
 }
 counter('01/01/2017 1:00:00 GMT-0400 (EDT)');
+//*****************************************MENU CLICKING ACTION
+//problem clicking
+$('#prbl').click(function () {
+	$('#home').css('display', 'none');
+	$('#profile').css('display', 'none');
+	$('#report').css('display', 'block');
+});
+$('#dshbrd').click(function () {
+	$('#home').css('display', 'block');
+	$('#profile').css('display', 'none');
+	$('#report').css('display', 'none');
+});
+//settings clicking
+$('#user').click(function () {
+	$('#home').css('display', 'none');
+	$('#man').css('display', 'none');
+	$('#profile').css('display', 'block');
+	$('#report').css('display', 'none');
+});
+$('#dshbrd').click(function () {
+	$('#home').css('display', 'block');
+	$('#man').css('display', 'block');
+	$('#profile').css('display', 'none');
+	$('#report').css('display', 'none');
+});
+//visualize clicking

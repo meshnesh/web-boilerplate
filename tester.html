@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Charts | Dashboard</title>
+	<title>Dashboard | tester</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
@@ -21,12 +21,12 @@
 		</header>
 		<nav class="side-navigation">
 			<ul>
-				<li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+				<li id="dshbrd" class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
 				<li><a href="#"><i class="fa fa-files-o"></i>Your Files</a></li>
 				<li><a href="#"><i class="fa fa-area-chart"></i>Visualise</a></li>
-				<li><a href="#"><i class="fa fa-user"></i>User profile</a></li>
+				<li id="user"><a href="#"><i class="fa fa-user"></i>User profile</a></li>
 				<li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
-				<li><a href="#"><i class="fa fa-exclamation-triangle"></i>Report a problem</a></li>
+				<li id="prbl"><a href="#"><i class="fa fa-exclamation-triangle"></i>Report a problem</a></li>
 			</ul>
 		</nav>
 	</aside>
@@ -49,7 +49,7 @@
 	<input type="text" name="search" placeholder="Type here to search..." autocomplete="off" /><i class="fa fa-search"></i> </div>
 -->
 		</header>
-		<div class="container main">
+		<div id="man" class="container main">
 			<div class="user-card">
 				<figure><img src="http://source.unsplash.com/random/110x110" /></figure>
 				<div class="user-info">
@@ -214,12 +214,68 @@
 				</div>
 			</div>
 		</div>
+		<!--		REPORT A PROBLEM-->
 		<div id="report" class="container content">
 			<h2>Report a problem</h2>
 			<hr>
 			<h3>Have you experienced any issue(s) while using this application?</h3>
 			<form method="post">
-				<textarea placeholder="Enter your complaint"> </textarea> <a class="success button" href="#">Success Color</a> </form>
+				<textarea placeholder="Enter your complaint"> </textarea> <a class="success button" href="#">Send</a> </form>
+		</div>
+		<!--		PROFILE SECTION-->
+		<div id="profile" class="container content">
+			<div class="user-card">
+				<figure><img src="http://source.unsplash.com/random/110x110" /></figure>
+				<div class="user-info">
+					<div class="name"> <span>John Doe</span> </div>
+					<div class="user-role"> DS </div>
+					<div class="experience-points"><i class="fa fa-coffee"></i>8,977 files</div>
+				</div>
+			</div>
+			<div class="action-links">
+				<ul>
+					<li><a href="#" data-title="Create new file"><i class="fa fa-plus"></i></a></li>
+					<li><a href="#" data-title="Sign out"><i class="fa fa-sign-out"></i></a></li>
+				</ul>
+			</div>
+			<h4>Settings/Profile</h4>
+			<hr>
+			<form method="post">
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-right middle">Full Name</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder=""> </div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-right middle">Telephone Number</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder=""> </div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-right middle">Company Name</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder=""> </div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-right middle">Enter new password</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder=""> </div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-right middle">Confirm new paasword</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder=""> </div>
+				</div> <a class="success button" href="#">Save</a> </form>
 		</div>
 	</main>
 	<footer>

@@ -60,7 +60,7 @@
 			</div>
 			<div class="action-links">
 				<ul>
-					<li><a href="#" data-title="Create new file"><i class="fa fa-plus"></i></a></li>
+					<li><a id="create" href="#" data-title="Create new file"><i class="fa fa-plus"></i></a></li>
 					<li><a href="#" data-title="Sign out"><i class="fa fa-sign-out"></i></a></li>
 				</ul>
 			</div>
@@ -276,6 +276,33 @@
 					<div class="small-9 columns">
 						<input type="text" id="middle-label" placeholder=""> </div>
 				</div> <a class="success button" href="#">Save</a> </form>
+		</div>
+		<div id="creation" class="container content">
+			<h2>Create a file</h2>
+			<hr>
+			<h3>Define the number of rows and columns of the file</h3>
+			<div class="row">
+				<div class="large-6 columns">
+					<div class="row">
+						<div class="small-3 columns command">
+							<h6>Rows:</h6> </div>
+						<div class="small-9 columns rambo">
+							<input type="text" id="tb_rows" placeholder="Enter Number of rows"> </div>
+					</div>
+				</div>
+				<div class="large-6 columns">
+					<div class="row">
+						<div class="small-3 columns command">
+							<h6>Columns:</h6> </div>
+						<div class="small-9 columns rambo">
+							<input type="text" id="tb_cols" placeholder="Enter Number of Columns"> </div>
+					</div>
+				</div> <a id="mellow" class="success button" href="#" onclick="createTable()">Create Table</a> </div>
+			<div class="row">
+				<div class="small-11 small-centered columns">
+					<div id="tb_container"> </div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>

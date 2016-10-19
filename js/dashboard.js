@@ -149,11 +149,13 @@ $('#prbl').click(function () {
 	$('#home').css('display', 'none');
 	$('#profile').css('display', 'none');
 	$('#report').css('display', 'block');
+	$('#creation').css('display', 'none');
 });
 $('#dshbrd').click(function () {
 	$('#home').css('display', 'block');
 	$('#profile').css('display', 'none');
 	$('#report').css('display', 'none');
+	$('#creation').css('display', 'none');
 });
 //settings clicking
 $('#user').click(function () {
@@ -161,11 +163,52 @@ $('#user').click(function () {
 	$('#man').css('display', 'none');
 	$('#profile').css('display', 'block');
 	$('#report').css('display', 'none');
+	$('#creation').css('display', 'none');
 });
 $('#dshbrd').click(function () {
 	$('#home').css('display', 'block');
 	$('#man').css('display', 'block');
 	$('#profile').css('display', 'none');
 	$('#report').css('display', 'none');
+	$('#creation').css('display', 'none');
+});
+//creation clicking
+$('#create').click(function () {
+	$('#home').css('display', 'none');
+	$('#man').css('display', 'none');
+	$('#creation').css('display', 'block');
+	$('#report').css('display', 'none');
+	$('#profile').css('display', 'none');
+});
+$('#dshbrd').click(function () {
+	$('#home').css('display', 'block');
+	$('#man').css('display', 'block');
+	$('#profile').css('display', 'none');
+	$('#report').css('display', 'none');
+	$('#creation').css('display', 'none');
 });
 //visualize clicking
+//creating section
+function createTable() {
+	document.getElementById('tb_container').innerHTML = "";
+	var rows = document.getElementById('tb_rows').value;
+	var cols = document.getElementById('tb_cols').value;
+	var tblHtml = '<form method="post">' + '<table>'
+	for (var i = 0; i < rows; i += 1) {
+		tblHtml += '<tr>';
+		for (var j = 0; j < cols; j += 1) {
+			tblHtml += '<td> <input id="content" type="number" placeholder="content" name="value"></td>';
+		}
+		tblHtml += '</tr>';
+	}
+	tblHtml += '<hr>' + '<h3>' + 'Please add data respectively to the table' + '</h3>' + '<h4>' + '<span>' + 'NB:' + '</span>' + 'The first row is the content header' + '</h4>' + '</table>' + '<a id="savefile" class="success button" href="#">Save File</a>' + '</form>';
+	document.getElementById('tb_container').innerHTML = tblHtml;
+	$('#savefile').on('click', function () {
+		console.log("file saved");
+		// if ( document.getElementById("content").content === " ") {
+		// 	console.log('Cannot be empty');
+		// }else {
+		//    console.log("file saved");
+		// }
+	});
+}

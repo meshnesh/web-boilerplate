@@ -180,7 +180,7 @@
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 	<script>
-		var n = 7, // number of layers
+		var n = 10, // number of layers
 			m = 12, // number of samples per layer
 			stack = d3.layout.stack()
 			, layers = stack(d3.range(n).map(function () {
@@ -198,12 +198,10 @@
 			});
 		var margin = {
 				top: 20
-				, right: 20
 				, bottom: 20
-				, left: 20
 			}
-			, width = 400 - margin.left - margin.right
-			, height = 200 - margin.top - margin.bottom;
+			, width = 700
+			, height = 400 - margin.top - margin.bottom;
 		var x = d3.scale.ordinal().domain(d3.range(m)).rangeRoundBands([0, width], .08);
 		var y = d3.scale.linear().domain([0, yStackMax]).range([height, 0]);
 		var color = d3.scale.linear().domain([0, n - 1]).range(["#F27C1F", "#3e3e3e"]);
@@ -261,7 +259,7 @@
 				return x(d.x);
 			}).attr("width", x.rangeBand());
 		}
-		// Inspired by Lee Byron's test data generator.
+		// test data generator.
 		function bumpLayer(n, o) {
 			function bump(a) {
 				var x = 1 / (.1 + Math.random())

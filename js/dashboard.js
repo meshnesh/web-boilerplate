@@ -234,7 +234,13 @@ function createTable() {
 }
 //visual
 $('#check').click(function () {
-	$('#step2').css('display', 'block');
+	//	if ($('#choose').has('option').length > 0) {
+	if (!$('#choose').val()) {
+		console.log('The selectbox contains 0 items');
+	}
+	else {
+		$('#step2').css('display', 'block');
+	}
 });
 $('#dshbrd').click(function () {
 	$('#step2').css('display', 'none');

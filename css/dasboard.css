@@ -1,5 +1,5 @@
 .logo-img {
-	width: 45%;
+	width: 50%;
 	float: left;
 }
 
@@ -603,6 +603,8 @@ main {
 .container {
 	padding: 30px;
 }
+
+
 /*
 #home {
 	background-color: #ecf0f1;
@@ -881,8 +883,18 @@ table tbody th {
 }
 
 
+/*VISUALIZATION SECTION*/
+
+.button.success.lize {
+	padding-right: 7%;
+	float: right;
+	width: 20%;
+}
+
+
 /*display section*/
 
+#home,
 #creation,
 #report,
 #profile {

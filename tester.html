@@ -30,7 +30,7 @@
 				<li><a href="#"><i class="fa fa-files-o"></i>Your Files</a></li>
 				<li><a href="#"><i class="fa fa-area-chart"></i>Visualise</a></li>
 				<li id="user"><a href="#"><i class="fa fa-user"></i>User profile</a></li>
-				<li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+				<!--				<li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>-->
 				<li id="prbl"><a href="#"><i class="fa fa-exclamation-triangle"></i>Report a problem</a></li>
 			</ul>
 		</nav>
@@ -40,9 +40,8 @@
 			<div class="row">
 				<div class="small-2 large-4 columns count">
 					<div class="icons">
-						<a href="index.html"><img src="img/logo/charts_web_logo.png" class="logo-img"></a>
-						<!--						<i class="fa fa-user-md"></i>--><i class="fa fa-comments-o"></i><i class="fa fa-bell-o"><span class="number-alert">3</span></i></div>
-					<!--					<div class="logo"><i class="fa fa-rocket"></i> </div>--></div>
+						<a href="index.html"><img src="img/logo/charts_web_logo.png" class="logo-img"></a> <i class="fa fa-comments-o"></i><i class="fa fa-bell-o"><span class="number-alert">3</span></i></div>
+				</div>
 				<div class="small-4 large-4 columns count">
 					<p>Your account expires in</p>
 				</div>
@@ -69,20 +68,16 @@
 -->
 			<!-- main content-->
 			<ul class="category-navigation container">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="#">Shared projects</a></li>
+				<li class="active"><a href="index.html"> Home</a></li>
+				<li><a href="#"> Shared projects</a></li>
 				<li><a id="create" href="#"><i class="fa fa-plus"></i> Create new file</a></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i> Sign out</a></li>
 			</ul>
 			<!--			HOME-->
 			<div id="home" class="container content">
 				<div id="home" class="chartContainer">
-					<!--
-				<div class="container">
-	<h1>Job distribution</h1>
-	<p></p>
-</div>
--->
+					<div class="container">
+						<h1>Exam distribution</h1> </div>
 					<form class="bar-graph">
 						<label>
 							<input type="radio" name="mode" value="grouped"> Grouped</label>
@@ -90,8 +85,10 @@
 							<input type="radio" name="mode" value="stacked" checked> Stacked</label>
 					</form>
 				</div>
-				<!--				<div id="mellow"> </div>-->
-				<div id="yellow"> </div>
+				<div id="yellow">
+					<div class="container">
+						<h1>language distribution</h1> </div>
+				</div>
 			</div>
 			<!--		REPORT A PROBLEM-->
 			<div id="report" class="container content">
@@ -100,6 +97,39 @@
 				<h3>Have you experienced any issue(s) while using this application?</h3>
 				<form method="post">
 					<textarea placeholder="Enter your complaint"> </textarea> <a class="success button" href="#">Send</a> </form>
+			</div>
+			<!--			VISUALZE SECTION-->
+			<div id="visualize" class="container content">
+				<h4>Visualize</h4>
+				<hr>
+				<div class="row">
+					<div class="small-2 large-4 columns jellow">
+						<h5>Step one</h5>
+						<hr>
+						<h6> Select a file to visualize</h6>
+						<hr>
+						<label>
+							<select>
+								<option value="" disabled selected>Select your file</option>
+								<option value="husker">Population</option>
+								<option value="starbuck">Voters</option>
+								<option value="hotdog">Insecurity</option>
+								<option value="apollo">Crime</option>
+								<option value="husker">Population</option>
+								<option value="starbuck">Voters</option>
+								<option value="hotdog">Insecurity</option>
+								<option value="apollo">Crime</option>
+							</select> <a class="success button lize" href="#">Next</a> </label>
+					</div>
+					<div class="small-4 large-4 columns jellow">
+						<h5>Step two</h5>
+						<hr>
+						<h6>Select Visualization</h6> </div>
+					<div class="small-6 large-4 columns jellow">
+						<h5>Step three</h5>
+						<hr>
+						<h6> Select Categorical and Numerical Value</h6> </div>
+				</div>
 			</div>
 			<!--		PROFILE SECTION-->
 			<div id="profile" class="container content">

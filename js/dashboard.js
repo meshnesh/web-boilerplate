@@ -197,7 +197,7 @@ function createTable() {
 	for (var i = 0; i < rows; i += 1) {
 		tblHtml += '<tr>';
 		for (var j = 0; j < cols; j += 1) {
-			tblHtml += '<td> <input id="content" type="number" placeholder="content" name="value"></td>';
+			tblHtml += '<td> <input id="content" type="text" placeholder="content" name="value"></td>';
 		}
 		tblHtml += '</tr>';
 	}

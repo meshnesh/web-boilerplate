@@ -150,12 +150,14 @@ $('#prbl').click(function () {
 	$('#profile').css('display', 'none');
 	$('#report').css('display', 'block');
 	$('#creation').css('display', 'none');
+	$('#visualize').css('display', 'none');
 });
 $('#dshbrd').click(function () {
 	$('#home').css('display', 'block');
 	$('#profile').css('display', 'none');
 	$('#report').css('display', 'none');
 	$('#creation').css('display', 'none');
+	$('#visualize').css('display', 'none');
 });
 //settings clicking
 $('#user').click(function () {
@@ -164,6 +166,7 @@ $('#user').click(function () {
 	$('#profile').css('display', 'block');
 	$('#report').css('display', 'none');
 	$('#creation').css('display', 'none');
+	$('#visualize').css('display', 'none');
 });
 $('#dshbrd').click(function () {
 	$('#home').css('display', 'block');
@@ -179,6 +182,7 @@ $('#create').click(function () {
 	$('#creation').css('display', 'block');
 	$('#report').css('display', 'none');
 	$('#profile').css('display', 'none');
+	$('#visualize').css('display', 'none');
 });
 $('#dshbrd').click(function () {
 	$('#home').css('display', 'block');
@@ -188,6 +192,22 @@ $('#dshbrd').click(function () {
 	$('#creation').css('display', 'none');
 });
 //visualize clicking
+$('#visual').click(function () {
+	$('#visualize').css('display', 'block');
+	$('#home').css('display', 'none');
+	$('#man').css('display', 'none');
+	$('#creation').css('display', 'none');
+	$('#report').css('display', 'none');
+	$('#profile').css('display', 'none');
+});
+$('#dshbrd').click(function () {
+	$('#home').css('display', 'block');
+	$('#man').css('display', 'block');
+	$('#profile').css('display', 'none');
+	$('#report').css('display', 'none');
+	$('#creation').css('display', 'none');
+	$('#visualize').css('display', 'none');
+});
 //creating section
 function createTable() {
 	document.getElementById('tb_container').innerHTML = "";
@@ -212,3 +232,10 @@ function createTable() {
 		// }
 	});
 }
+//visual
+$('#check').click(function () {
+	$('#step2').css('display', 'block');
+});
+$('#dshbrd').click(function () {
+	$('#step2').css('display', 'none');
+});

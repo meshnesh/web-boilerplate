@@ -1,9 +1,14 @@
+.logo-img {
+	width: 45%;
+	float: left;
+}
+
 aside {
 	background-color: #34495e;
 	display: inline-block;
 	height: 100vh;
 	position: fixed;
-	width: 25%;
+	width: 20%;
 }
 
 aside header {
@@ -44,7 +49,7 @@ aside header > div {
 .side-navigation a {
 	color: #92a1a2;
 	display: block;
-	padding: 15px 25px;
+	padding: 30px 25px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -69,7 +74,7 @@ aside header > div {
 main {
 	float: right;
 	vertical-align: top;
-	width: 75%;
+	width: 80%;
 }
 
 .main-head {
@@ -144,6 +149,7 @@ main {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+	margin-top: 5%;
 }
 
 .user-card {
@@ -597,10 +603,16 @@ main {
 .container {
 	padding: 30px;
 }
+/*
+#home {
+	background-color: #ecf0f1;
+	padding-bottom: 90px;
+}
+*/
 
 .container.content {
 	background-color: #ecf0f1;
-	padding-bottom: 40px;
+	padding-bottom: 90px;
 }
 
 .fa:not(.fa-star):hover {

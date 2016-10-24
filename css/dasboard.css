@@ -885,6 +885,10 @@ table tbody th {
 
 /*VISUALIZATION SECTION*/
 
+.jellow {
+	text-align: left;
+}
+
 .button.success.lize {
 	padding-right: 7%;
 	float: right;

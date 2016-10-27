@@ -225,16 +225,10 @@ function createTable() {
 	document.getElementById('tb_container').innerHTML = tblHtml;
 	$('#savefile').on('click', function () {
 		console.log("file saved");
-		// if ( document.getElementById("content").content === " ") {
-		// 	console.log('Cannot be empty');
-		// }else {
-		//    console.log("file saved");
-		// }
 	});
 }
 //visual
 $('#check').click(function () {
-	//	if ($('#choose').has('option').length > 0) {
 	if (!$('#choose').val()) {
 		console.log('The selectbox contains 0 items');
 	}

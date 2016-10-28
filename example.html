@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="utf-8">
@@ -13,32 +13,78 @@
 	
 	<link rel="stylesheet" href="css/example.css"> 
 	<!-- Load D3 from site -->
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8">
+    </script>
+
   </head>
 
   <body>
-  
-<div class="expanded row">
+
+
+ <nav class="nav ">
+     <div class="nav-center">
+        <a class="toggle-nav" href="#">&#9776;</a>
+
+        <div class="nav-mobile">
+            <ul class="left">
+                <li><a id="link1" class="nav-section1 hvr-underline-from-left active" href="#section1">Home</a></li>
+                <li> <a id="link2" class="nav-section2 hvr-underline-from-left" href="#section2"></a> </li>
+                <li><a id="link3" class="nav-section3 hvr-underline-from-left" href="#section3"> Sign up / Login</a></li>
+                <li><a id="link4" class="nav-section4 hvr-underline-from-left" href="#section4"> Dashboard</a></li>
+                <li class="scrollTop"><a href="#"><span class="entypo-up-open"></span></a></li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="#"><i class="fa fa-user"></i> Example</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+
+
+
+
+
+        </div>
+        </div>
+    </nav>
+   
+    <div class="expanded row">
 	<h1>
 		Graph examples
 	</h1>
 	<hr>
-	<div class="row dots">
+	<div class="row areas">
 		<h5>
-			1. Dot graph
+			1. Area graph
 		</h5>
 	</div>
+	<hr>
+	
+	
 	<div class="row lines">
 		<h5>
-			1. Line graph
+			2. Line graph
 		</h5>
 	</div>
-	<div class="row bar">
+	<hr>
+	<div class="row dots">
 		<h5>
-	<!-- 1. Line graph -->
+			3. Dot graph
+		</h5>
+	</div>
+	<hr>
+	
+	<div class="row pies">
+		<h5>
+			5.Pie chart
 		</h5>
 	</div>
 </div>
+    
+
 	
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/what-input.js"></script>

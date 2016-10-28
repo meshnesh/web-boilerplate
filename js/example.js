@@ -348,14 +348,17 @@ d3.tsv("data.tsv", function (error, data) {
 
 
 
-var w = 400;
-var h = 400;
+var w = 500;
+var h = 500;
 var r = h/2;
 var color = d3.scale.category20c();
 
-var data = [{"label":"Category A", "value":20}, 
-              {"label":"Category B", "value":50}, 
-              {"label":"Category C", "value":30}];
+var data = [{"label":"A", "value":15}, 
+            {"label":"B", "value":120}, 
+            {"label":"C", "value":90},
+            {"label":"D", "value":45}, 
+            {"label":"E", "value":50}, 
+            {"label":"F", "value":40}];
 
 
 var vis = d3.select('.pies')
@@ -393,7 +396,9 @@ $('#area').click(function () {
   $('#lines').css('display','none');
   $('#dots').css('display','none');
   $('#pies').css('display','none');
-  
+  $('#hr2').css('display','none');
+  $('#hr3').css('display','none');
+  $('#hr4').css('display','none');
 
 });
 $('#line').click(function () {
@@ -401,13 +406,35 @@ $('#line').click(function () {
   $('#lines').css('display','block');
   $('#dots').css('display','none');
   $('#pies').css('display','none');
+  $('#hr2').css('display','block');
+  $('#hr1').css('display','none');
+  $('#hr3').css('display','none');
+  $('#hr4').css('display','none');
   
 });
+
+$('#line').click(function () {
+	$('#areas').css('display','none');
+  $('.area').css('fill','steelblue');
+  $('#lines').css('display','block');
+  $('#dots').css('display','none');
+  $('#pies').css('display','none');
+  $('#hr2').css('display','block');
+  $('#hr1').css('display','none');
+  $('#hr3').css('display','none');
+  $('#hr4').css('display','none');
+  
+});
+
 $('#dot').click(function () {
   $('#areas').css('display','none');
   $('#lines').css('display','none');
   $('#dots').css('display','block');
   $('#pies').css('display','none');
+  $('#hr3').css('display','block');
+  $('#hr1').css('display','none');
+  $('#hr2').css('display','none');
+  $('#hr4').css('display','none');
 
 });
 $('#pie').click(function () {
@@ -415,6 +442,11 @@ $('#pie').click(function () {
   $('#lines').css('display','none');
   $('#dots').css('display','none');
   $('#pies').css('display','block');
+  $('#hr1').css('display','none');
+  $('#hr2').css('display','none');
+  $('#hr3').css('display','none');
+  $('#hr4').css('display','block');
+  
 });
 
 

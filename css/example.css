@@ -1,4 +1,4 @@
- /****************************GENERAL************************************/
+,  /****************************GENERAL************************************/
 
 *{
     border: 0;
@@ -129,13 +129,15 @@ ul{
 .area {
   fill: steelblue;
 }
+
+
 /*bar graph*/
 
 h1, .areas, .lines, .dots, .pies, .buttons{
   text-align: center;
 }
 
-#lines, #dots, #pies{
+#lines, #dots, #pies, #hr2, #hr3, #hr4{
   display: none;
 }
 

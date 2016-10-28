@@ -387,3 +387,35 @@ arcs.append("svg:text").attr("transform", function(d){
 .attr("text-anchor", "middle").text( function(d, i) {
     return data[i].label;}
     );
+// BUTTON CLICK FUNCTION
+$('#area').click(function () {
+  $('#areas').css('display','block');
+  $('#lines').css('display','none');
+  $('#dots').css('display','none');
+  $('#pies').css('display','none');
+  
+
+});
+$('#line').click(function () {
+  $('#areas').css('display','none');
+  $('#lines').css('display','block');
+  $('#dots').css('display','none');
+  $('#pies').css('display','none');
+  
+});
+$('#dot').click(function () {
+  $('#areas').css('display','none');
+  $('#lines').css('display','none');
+  $('#dots').css('display','block');
+  $('#pies').css('display','none');
+
+});
+$('#pie').click(function () {
+  $('#areas').css('display','none');
+  $('#lines').css('display','none');
+  $('#dots').css('display','none');
+  $('#pies').css('display','block');
+});
+
+
+

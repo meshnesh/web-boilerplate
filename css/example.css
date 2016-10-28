@@ -131,8 +131,12 @@ ul{
 }
 /*bar graph*/
 
-h1, .areas, .lines, .dots, .pies{
+h1, .areas, .lines, .dots, .pies, .buttons{
   text-align: center;
+}
+
+#lines, #dots, #pies{
+  display: none;
 }
 
 

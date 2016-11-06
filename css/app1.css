@@ -31,6 +31,7 @@ a {
 ul {
 	list-style: none;
 	/*	text-align: right;*/
+	margin-top: 1.4%;
 }
 
 
@@ -70,7 +71,7 @@ nav {
 	display: block;
 	color: #008736;
 	background-color: #fff;
-	padding: 10px 7px;
+	padding: 0px 5px;
 	text-decoration: none;
 }
 
@@ -80,13 +81,14 @@ nav {
 
 .nav li {
 	background-color: #fff;
+	border-radius: 8px;
 }
 
 .nav li a span {
 	display: inline-block;
 	margin-left: 5px;
 	font-size: 10px;
-	color: #999;
+	color: #008736;
 }
 
 .nav li .dropdown-menu {
@@ -96,7 +98,7 @@ nav {
 	margin: 0;
 	margin-top: 3px;
 	text-align: left;
-	padding-top: 3%;
+	padding-top: 20%;
 	z-index: 10000000;
 }
 
@@ -132,10 +134,10 @@ nav {
 }
 
 .signup {
-	font-size: 1.2em;
-	font-weight: 200;
+	/*font-size: 1.2em;*/
+	font-weight: 300;
 	text-transform: uppercase;
-	color: #0ab59f;
+	color: #fff;
 	/*	float: right;*/
 	/*	height: 2.5em;*/
 	/*

@@ -1,14 +1,10 @@
-.logo-img {
-	width: 50%;
-	float: left;
-}
 
 aside {
 	background-color: #34495e;
 	display: inline-block;
 	height: 100vh;
 	position: fixed;
-	width: 20%;
+	width: 10%;
 }
 
 aside header {
@@ -46,13 +42,7 @@ aside header > div {
 	font-size: 14px;
 }
 
-.side-navigation a {
-	color: #92a1a2;
-	display: block;
-	padding: 30px 25px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+
 
 .side-navigation i.fa {
 	color: #92a1a2;
@@ -71,11 +61,7 @@ aside header > div {
 	color: #2dcc70;
 }
 
-main {
-	float: right;
-	vertical-align: top;
-	width: 80%;
-}
+
 
 .main-head {
 	*zoom: 1;
@@ -99,10 +85,6 @@ main {
 	clear: both;
 }
 
-.main-head .icons {
-	float: left;
-	font-size: 21px;
-}
 
 .main-head .icons .fa {
 	position: relative;
@@ -222,10 +204,6 @@ main {
 	text-decoration: none;
 }
 
-.action-links {
-	float: right;
-	margin-top: 22px;
-}
 
 .action-links a {
 	border: 1px solid #92a1a2;
@@ -304,7 +282,7 @@ main {
 	border-bottom: 1px solid #92a1a2;
 }
 
-.category-navigation a {
+.category-navigation a {  
 	box-sizing: border-box;
 	color: #2b3a4f;
 	display: block;
@@ -328,11 +306,7 @@ main {
 	border-bottom: 4px solid #2dcc70;
 }
 
-.category-navigation.container {
-	padding-bottom: 0;
-	padding-top: 25px;
-	height: 4em;
-}
+
 
 .card {
 	display: inline-block;
@@ -700,10 +674,10 @@ p {
 #counter {
 	text-align: center;
 	display: block;
-	font-size: 1.2em;
+	font-size: 1em;
 	color: #282828;
 	width: 100%;
-	float: right;
+	/*float: right;*/
 }
 
 @media (max-width: 500px) {
@@ -741,21 +715,6 @@ p {
 }
 */
 
-#counter span.days:before {
-	content: "DAYS";
-}
-
-#counter span.hours:before {
-	content: "HOUR";
-}
-
-#counter span.minutes:before {
-	content: "MIN";
-}
-
-#counter span.seconds:before {
-	content: "SEC";
-}
 
 #counter span:before {
 	top: -20px;

@@ -1,0 +1,266 @@
+ol,
+ul
+{
+    margin-left: 0rem;
+}
+.side-navigation a
+{
+    display: block;
+
+    padding: 30px 0;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #92a1a2;
+}
+
+.punch
+{
+    text-align: center;
+}
+.jungle
+{
+    position: fixed;
+
+    display: inline-block;
+
+    width: 20%;
+    min-height: 100vh;
+    margin-left: 10.034%;
+
+    background-color: #92a1a2;
+}
+
+
+h5
+{
+    font-weight: 300;
+    line-height: normal;
+
+    padding-left: 3%;
+
+    text-decoration: underline;
+}
+h5:hover
+{
+    transition: width .3s;
+    text-decoration: line-through;
+}
+h5 a
+{
+    font-size: 1rem;
+
+    color: #34495e;
+}
+.desert{
+	padding-top: 15%;
+}
+
+
+.desert li h5 a.active,
+.desert li h5 a:hover
+{
+    color: #2dcc70;
+}
+main
+{
+    float: right;
+
+    width: 70%;
+
+    vertical-align: top;
+}
+
+.main-head .icons
+{
+    font-size: 21px;
+
+    float: right;
+}
+
+.fall
+{
+    float: left;
+}
+
+.category-navigation.container {
+    padding-bottom: 0;
+    padding-top: 25px;
+     /*height: 0em; */
+}
+#counter span.days:before {
+	content: "DAYS";
+}
+
+#counter span.hours:before {
+	content: "HOUR";
+}
+
+#counter span.minutes:before {
+	content: "MIN";
+}
+
+#counter span.seconds:before {
+	content: "SEC";
+}
+
+
+/****************************MEDIA QUERIES************************************/
+
+@media only screen and (max-width: 768px)
+{
+    .jungle
+    {
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+
+        width: 83%;
+        min-height: 25vh;
+        margin-left: 18.5%;
+
+        background-color: #92a1a2;
+    }
+    aside
+    {
+        position: fixed;
+
+        display: inline-block;
+
+        width: 18%;
+        height: 100vh;
+
+        background-color: #34495e;
+    }
+    li
+    {
+        text-align: center;
+    }
+    h5
+    {
+        font-weight: 300;
+        line-height: normal;
+
+        padding-left: 3%;
+
+        text-decoration: none;
+    }
+    main
+    {
+        float: right;
+
+        width: 81%;
+        margin-top: 0%;
+
+        vertical-align: top;
+    }
+
+    #counter
+    {
+        font-size: 1.3em;
+    }
+    .fall{
+    	font-size: 1em;
+    }
+    .large-8
+    {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .main-head {
+    	min-height: 35vh;
+    }
+    .main-head .icons
+{
+   margin-top: 15%;
+}
+.side-navigation a {
+    display: block;
+    padding: 27px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #92a1a2;
+}
+.name{
+	font-size: .5em;
+    font-weight: 200;
+}
+#counter span.days:before {
+	content: "";
+}
+
+#counter span.hours:before {
+	content: "";
+}
+
+#counter span.minutes:before {
+	content: "";
+}
+
+#counter span.seconds:before {
+	content: "";
+}
+
+        
+}
+
+
+@media only screen and (max-width: 640px)
+{
+    .toggle-nav
+    {
+        line-height: 30px;
+
+        position: absolute;
+        right: 10px;
+
+        display: block;
+
+        padding: 10px;
+    }
+    .toggle-nav:after
+    {
+        content: ' Menu';
+    }
+
+    .nav-mobile
+    {
+        display: none;
+    }
+
+    .style-mobile
+    {
+        position: absolute;
+        top: 51px;
+
+        width: 100%;
+
+        background: #fff;
+    }
+
+    .style-mobile li
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    .nav
+    {
+        display: block;
+        float: none;
+
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 641px)
+{
+    .nav-mobile
+    {
+        display: block !important;
+    }
+}
+/*********MEDIA QUERY END**********/

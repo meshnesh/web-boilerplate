@@ -107,7 +107,8 @@ body {
 
 ol,
 ul {
-	list-style: none
+	list-style: none;
+	margin-top: 2.9%;
 }
 
 blockquote,
@@ -148,6 +149,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 10% auto;
+	margin-top: 20%;
 }
 
 
@@ -197,7 +199,7 @@ body {
 
 .toggle i {
 	position: relative;
-	top: 14px;
+	top: 5px;
 }
 
 .toggle .tooltip:before {
@@ -550,7 +552,7 @@ p.reset-info {
 	color: #9d9d9d;
 	transition: .5s ease;
 	position: absolute;
-	top: 100px;
+	top: 0px;
 }
 
 .card .input-container input:focus ~ .form-control-feedback {

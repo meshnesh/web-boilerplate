@@ -362,7 +362,8 @@ var data = [{"label":"A", "value":15},
 
 
 var vis = d3.select('.pies')
-.append("svg:svg").data([data]).attr("width", w).attr("height", h).append("svg:g")
+.append("svg:svg").data([data])
+.attr("width", w).attr("height", h).append("svg:g")
 .attr("transform", "translate(" + r + "," + r + ")");
 var pie = d3.layout.pie().value(function(d){return d.value;});
 

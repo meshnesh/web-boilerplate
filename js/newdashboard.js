@@ -310,4 +310,154 @@ if ($(window).width() > 739) {
 
 }
 
+
+// json data
+
+$(document).ready(function() {
+
+    var options = {
+        chart: {
+            renderTo: 'container1',
+            type: 'spline'
+        },
+        title: {
+                    text: 'Rainfall drop'
+                },
+        series: [{}],
+        navigation: {
+            buttonOptions: {
+                enabled: true
+            }
+        }
+
+    };
+
+    $.getJSON('data.json', function(data) {
+        options.series[0].data = data;
+        var chart = new Highcharts.Chart(options);
+    });
+
+});
+
+
+// csv data
+
+$(document).ready(function() {
+            
+            var options = {
+                chart: {
+                    renderTo: 'container',
+                    type: 'column'
+                },
+                title: {
+                    text: 'Fruit Consumption'
+                },
+                xAxis: {
+                    text: 'Cities'
+                },
+                yAxis: {
+                    title: {
+                        // text: 'Units'
+                        text: 'Units'
+                    }
+                },
+                series: [],
+                navigation: {
+                    buttonOptions: {
+                        enabled: true
+                    }
+                }
+            };
+        
+            $.get('data.csv', function(data) {
+                // Split the lines
+                var lines = data.split('\n');
+                $.each(lines, function(lineNo, line) {
+                    var items = line.split(',');
+                    
+                    // header line containes categories
+                    if (lineNo == 0) {
+                        $.each(items, function(itemNo, item) {
+                            if (itemNo > 0) options.xAxis.categories.push(item);
+                        });
+                    }
+                    
+                    // the rest of the lines contain data with their name in the first position
+                    else {
+                        var series = { 
+                            data: []
+                        };
+                        $.each(items, function(itemNo, item) {
+                            if (itemNo == 0) {
+                                series.name = item;
+                            } else {
+                                series.data.push(parseFloat(item));
+                            }
+                        });
+                        
+                        options.series.push(series);
+                    }
+                    
+                });
+                
+                var chart = new Highcharts.Chart(options);
+            });
+
+
+
+
+
+            // Column chart
+options.chart.renderTo = 'container';
+options.chart.type = 'column';
+var chart1 = new Highcharts.Chart(options);
+
+chartfunc = function()
+{
+var column = document.getElementById('column');
+var bar = document.getElementById('bar');
+var pie = document.getElementById('pie');
+var line = document.getElementById('line');
+
+        
+if(column.checked)
+    {
+        
+        options.chart.renderTo = 'container';
+        options.chart.type = 'column';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(bar.checked)
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'bar';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(pie.checked)
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'pie';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'line';
+        var chart1 = new Highcharts.Chart(options);
+    }
+
+}
+
+$('#change_chart_title').click(function(){
+    options.title.text = $('#chart_title').val();
+    var chart1 = new Highcharts.Chart(options);
+});
+            
+});
+
+
+
+
+
+
 // END OF WINDOW SCRIPT

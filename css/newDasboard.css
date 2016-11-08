@@ -105,7 +105,28 @@ main
 	content: "SEC";
 }
 
+/*graph container sections*/
+h6{
+    text-decoration: underline;
+}
+.visualize{
+        margin-top: 3%;
+        text-align: center;
+}
 
+#container1{
+    display: none;
+}
+
+.warning.button{
+    margin-top: 2%;
+    float: right;
+}
+.junkie{
+        border-left: 3px double #000;
+    border-radius: 3px;
+}
+/*end of graph container sections*/
 /****************************MEDIA QUERIES************************************/
 
 @media only screen and (max-width: 768px)

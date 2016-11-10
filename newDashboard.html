@@ -12,8 +12,6 @@
 		<link rel="stylesheet" href="css/dasboard.css">
 		<link rel="stylesheet" href="css/newDasboard.css">
 		<script src="js/vendor/jquery.js"></script>
-		
-		
 		<script src="js/highcharts.js"></script>
 		<script src="js/exporting.js"></script>
 		
@@ -22,6 +20,7 @@
 		<aside>
 			<nav class="side-navigation">
 				<ul class="punch">
+					<li><a href="index.html"><img src="img/logo/charts_web_logo.png" class="logo-img"></a></li>
 					<li class="active"><a href="index.html"><i class="fa fa-home"></i></a></li>
 					<li><a href="#"><i class="fa fa-dashboard"></i></a></li>
 					<li><a href="#"><i class="fa fa-files-o"></i></a></li>
@@ -39,12 +38,18 @@
 			<ul class="desert">
 				<li>
 					<div>
-						<h5><a href="#">Major cities fruit consumption </a></h5>
+						<h5>
+							<a id="major" href="#">
+								Major cities fruit consumption 
+							</a>
+						</h5>
 					</div>
 				</li>
 				<li>
 					<div>
-						<h5><a href="#">Rainfall distribution in Kenya year 2015 </a></h5>
+						<h5>
+							<a id="rainfall" href="#">Rainfall distribution in Kenya year 2015 </a>
+						</h5>
 					</div>
 				</li>
 				
@@ -65,15 +70,25 @@
 				</div>
 				<div class="action-links">
 					<ul>
-						<li><a href="#" data-title="Create new file"><i class="fa fa-plus"></i></a></li>
-						<li><a href="#" data-title="Sign out"><i class="fa fa-sign-out"></i></a></li>
+						<li>
+							<a href="#" data-title="Create new file">
+								<i class="fa fa-plus"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-title="Sign out">	<i class="fa fa-sign-out"></i>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="column row">
+	<!-- CONTAINER -->
 		<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+		<!-- CONTAINER 1 -->
+		<div id="container1" style="width: 800px; height: 400px; margin: 0 auto"></div>
 		<!-- begining of visualize -->
 		<div class="row visualize">
 			<div class="medium-6 columns">
@@ -95,12 +110,18 @@
 				
 				<input type="text" id="chart_title" placeholder="Change chart title">
 				<button class="warning button" id="change_chart_title">Change</button>
+				
+			</div>
+			<div class="row column">
+				<button class="success button">
+					Change color
+				</button>
 			</div>
 		</div>
 		<!-- end of visualize -->
 	</div>
 	<!-- end of container one -->
-	<div id="container1" style="width: 800px; height: 400px; margin: 0 auto"></div>
+	
 	</main>
 	<footer>
 		<p>Charts.co.ke</p>

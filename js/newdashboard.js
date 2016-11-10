@@ -337,6 +337,54 @@ $(document).ready(function() {
         var chart = new Highcharts.Chart(options);
     });
 
+ // Column chart
+options.chart.renderTo = 'container1';
+options.chart.type = 'spline';
+var chart1 = new Highcharts.Chart(options);
+
+chartfunc = function()
+{
+var column = document.getElementById('column');
+var bar = document.getElementById('bar');
+var pie = document.getElementById('pie');
+var line = document.getElementById('line');
+
+        
+if(column.checked)
+    {
+        
+        options.chart.renderTo = 'container1';
+        options.chart.type = 'column';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(bar.checked)
+    {
+        options.chart.renderTo = 'container1';
+        options.chart.type = 'bar';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(pie.checked)
+    {
+        options.chart.renderTo = 'container1';
+        options.chart.type = 'pie';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else
+    {
+        options.chart.renderTo = 'container1';
+        options.chart.type = 'spline';
+        var chart1 = new Highcharts.Chart(options);
+    }
+
+}
+
+$('#change_chart_title').click(function(){
+    options.title.text = $('#chart_title').val();
+    var chart1 = new Highcharts.Chart(options);
+});
+    
+
+
 });
 
 
@@ -347,17 +395,19 @@ $(document).ready(function() {
             var options = {
                 chart: {
                     renderTo: 'container',
-                    type: 'column'
+                    type: 'bar'
                 },
                 title: {
                     text: 'Fruit Consumption'
                 },
                 xAxis: {
-                    text: 'Cities'
+                    Categories: [{}],
+                },
+                 xAxis: {
+                    categories: []
                 },
                 yAxis: {
                     title: {
-                        // text: 'Units'
                         text: 'Units'
                     }
                 },
@@ -405,8 +455,6 @@ $(document).ready(function() {
 
 
 
-
-
             // Column chart
 options.chart.renderTo = 'container';
 options.chart.type = 'column';
@@ -442,7 +490,7 @@ else if(pie.checked)
 else
     {
         options.chart.renderTo = 'container';
-        options.chart.type = 'line';
+        options.chart.type = 'spline';
         var chart1 = new Highcharts.Chart(options);
     }
 
@@ -455,9 +503,17 @@ $('#change_chart_title').click(function(){
             
 });
 
+$('#major').click(function () {
+  $('#container').css('display','block');
+  $('#container1').css('display','none');
 
+});
 
-
+$('#rainfall').click(function () {
+  $('#container').css('display','none');
+  $('#container1').css('display','block');
+  
+});
 
 
 // END OF WINDOW SCRIPT

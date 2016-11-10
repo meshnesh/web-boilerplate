@@ -106,6 +106,9 @@ main
 }
 
 /*graph container sections*/
+.logo-img{
+    width: 86%;
+}
 h6{
     text-decoration: underline;
 }
